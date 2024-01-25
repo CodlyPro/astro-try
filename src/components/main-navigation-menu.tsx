@@ -1,7 +1,6 @@
 import * as React from "react";
 
-import { cn } from "@/lib/utils";
-import { Icons } from "@/icons";
+import { Badge } from "@/components/ui/badge";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -10,8 +9,8 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
-import { Badge } from "@/components/ui/badge";
 import { navMenuConfig } from "@/config/nav-menu";
+import { cn } from "@/lib/utils";
 import type { MenuItem } from "@/types";
 
 const infos = navMenuConfig.infosNav[0];
@@ -27,14 +26,13 @@ export function MainNavigationMenu() {
             <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
               <li className="row-span-3">
                 <a
-                  className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
+                  className="flex h-full w-full select-none flex-col justify-center rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
                   href="/"
                 >
-                  <Icons.logo className="size-8" />
-                  <div className="mb-2 mt-3 text-lg font-medium">Astronomy</div>
+                  <img src="/favicon.svg" alt="Logo" className="size-8" />
+                  <div className="mb-2 mt-3 text-lg font-medium">Nudibranches technologies</div>
                   <p className="text-sm leading-tight text-muted-foreground">
-                    Modern application with differents sections examples built
-                    using shadcn/ui.
+                  Designed for the AI revolution
                   </p>
                 </a>
               </li>
